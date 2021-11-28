@@ -1,8 +1,8 @@
 ﻿namespace Module2HW6.Model.PortableAppliances
 {
-    public class VacuumCleaner : CleanAppliances
+    public class FloorCleaner : CleanAppliances
     {
-        public VacuumCleaner()
+        public FloorCleaner()
         {
             Producer = Enum.Company.Samsung;
         }
