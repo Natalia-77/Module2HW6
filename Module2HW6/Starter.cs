@@ -1,4 +1,6 @@
 ﻿using System;
+using Module2HW6.Enum;
+using Module2HW6.Helper;
 using Module2HW6.Provider;
 using Module2HW6.Service.Abstractions;
 
@@ -30,12 +32,10 @@ namespace Module2HW6
                 _applianceService.TurnOnSocket(_appliencesProvider.Appliances[num]);
             }
 
-            var power = _applianceService.FullPower();
-            var all = _applianceService.GetAllAppliances();
-            foreach (var item in all)
-            {
-                Console.WriteLine(item.Power);
-            }
+            _applianceService.SortByPower();
+            var powerOn = _applianceService.GetAllAppliances();
+            var totalPower = _applianceService.FullPower();
+            var search = powerOn.SearchByCompany(Company.Gorenie);
         }
    }
 }

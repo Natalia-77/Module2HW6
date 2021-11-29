@@ -1,4 +1,6 @@
-﻿using Module2HW6.Exceptions;
+﻿using System;
+using Module2HW6.Exceptions;
+using Module2HW6.Helper;
 using Module2HW6.Model;
 
 namespace Module2HW6.Service.Abstractions
@@ -55,7 +57,7 @@ namespace Module2HW6.Service.Abstractions
 
         public void SortByPower()
         {
-            throw new System.NotImplementedException();
+            Array.Sort(_appliances, new PowerComparer());
         }
     }
 }

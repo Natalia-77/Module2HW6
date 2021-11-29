@@ -14,32 +14,39 @@ namespace Module2HW6.Provider
             {
                 new Refregerator()
                 {
-                    Name = "Холодильник Gorenie RB34T600FSA/UA ",
+                    Name = "Холодильник",
                     RefregeratorType = RefregeratorType.Large,
                     Price = 15999,
                     Power = 2000
                 },
                 new TV()
                 {
-                    Name = "Телевизор Panasonic QE55Q60AAUXUA ",
+                    Name = "Телевизор",
                     TVType = TVType.Large,
                     Price = 21500,
                     Power = 500
                 },
                 new DryHair()
                 {
-                  Name = "ФЕН DYSON SUPERSONIC HD01 ",
+                  Name = "ФЕН",
                   DryType = DryType.Professional,
                   Price = 900,
                   Power = 400
                 },
                 new FloorCleaner()
                 {
-                  Name = "Аккумуляторный пылесос BCS612KA2 ",
+                  Name = "Пылесос ",
                   FloorCleanerType = FloorCleanerType.Home,
                   Price = 9200,
                   Power = 1500
-                }
+                },
+                new Refregerator()
+                {
+                    Name = "Холодильник",
+                    RefregeratorType = RefregeratorType.Large,
+                    Price = 20000,
+                    Power = 3000
+                },
             };
         }
 
